@@ -1,0 +1,151 @@
+%-------------------------------------------------------------------------------
+\documentclass[UTF8,AutoFakeBold]{resume}
+%-------------------------------------------------------------------------------
+\usepackage{zh_CN-Adobefonts_external}
+\usepackage{linespacing_fix}
+\usepackage{cite}
+\usepackage{float}
+\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage{wrapfig} 
+%-------------------------------------------------------------------------------
+\usepackage{amsmath,bm}
+%-------------------------------------------------------------------------------
+\usepackage{booktabs}
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\begin{document}
+\pagenumbering{gobble}
+%-------------------------------------------------------------------------------
+%简历照片
+%-------------------------------------------------------------------------------
+    \begin{figure}[h]
+        \flushright
+        \includegraphics[height=2.5cm,width=2.5cm]{heu.png}
+    \end{figure}
+\vspace{-0.175\linewidth}
+%-------------------------------------------------------------------------------
+%求职人姓名
+%-------------------------------------------------------------------------------
+\begin{center}
+        \centering
+        \LARGE\fangsong\textbf{XXX} 
+\end{center}
+%-------------------------------------------------------------------------------
+%求职人意向
+%-------------------------------------------------------------------------------
+\centering\fangsong\normalsize{求职意向：xxxxxx}
+%-------------------------------------------------------------------------------
+%个人基本信息
+%-------------------------------------------------------------------------------
+\par
+\begin{center}
+%\faMapMarker \hspace{0.25em}\fangsong\textbf{黑龙江\textbullet 哈尔滨}
+%\hspace{0.25em}{\small{\textbullet}}\hspace{0.25em}
+%\makebox[0.75em][c]{\faVenus}
+% \hspace{0.25em}{\small{\textbullet}}\hspace{0.25em}
+% \fangsong\textbf{22岁}
+\hspace{0.25em}{\small{\textbullet}}\hspace{0.25em}
+	\faPhone \hspace{0.25em}\textbf{(+86)xxx-xxxx-xxxx}
+\hspace{0.25em}{\small{\textbullet}}\hspace{0.25em}
+\faEnvelope \hspace{0.25em}\textbf{\textit{xxxxxx@xxx.com}}
+\end{center}
+%-------------------------------------------------------------------------------
+%教育背景
+%-------------------------------------------------------------------------------
+%硕士学历写在前面
+\section{\hspace{0.25em}\makebox[0.75em][c]{\faGraduationCap} \fangsong\textbf{教育背景}}
+\datedsubsection{\textbf{大学名称}\quad \small{\faMapMarker \fangsong\textbf{省份\textbullet 城市}}\qquad \qquad \textbf{专业}\qquad \qquad \textbf{学历}}
+{\textbf{入学时间 \textasciitilde \ 毕业时间}}
+\begin{itemize}
+    \item \kaishu\textbf{GPA: xxxx/xxx}\quad(排名前xx\%)
+\end{itemize}
+%-------------------------------------------------------------------------------
+%本科学历写在后面
+\datedsubsection{\textbf{大学名称}\quad \small{\faMapMarker \fangsong\textbf{省份\textbullet 城市}}\qquad \qquad \textbf{专业}\qquad \qquad \textbf{学历}}
+{\textbf{入学时间 \textasciitilde \ 毕业时间}}
+\begin{itemize}
+	\item \kaishu\textbf{GPA: xxxx/xxx}\quad(排名前xx\%)
+\end{itemize}
+%-------------------------------------------------------------------------------
+%实习经历
+%-------------------------------------------------------------------------------
+\section{\hspace{0.25em}\makebox[0.75em][c]{\faUsers} \fangsong\textbf{实习经历}}
+\datedsubsection{\textbf{实习公司}\quad \small{\faMapMarker \fangsong\textbf{实习地点}}\qquad \qquad \textbf{实习部门}}
+{\large\textbf{2022.9 \textasciitilde \ 2022.10}}
+    \begin{itemize}
+      \item \kaishu 实习内容
+    \end{itemize}
+%-------------------------------------------------------------------------------
+%项目经历
+%-------------------------------------------------------------------------------
+%项目个数建议最多就两个，跳重点写
+\section{\hspace{0.25em}\makebox[0.75em][c]{\faFlask} \fangsong\textbf{项目经历}}
+\datedsubsection{\textbf{XXXXXXXX}\qquad \textbf{可以写项目开发者这类的}}
+{\textbf{项目开始时间\textasciitilde \ 项目结束时间}}
+    \raggedright\textbf{项目描述：}
+    \begin{description}[style=unboxed, leftmargin=0pt, noitemsep, nolistsep]
+    \item\kaishu  填写项目描述
+    \end{description}
+    \raggedright\textbf{主要工作：}
+    \begin{itemize}
+        \item\kaishu 有几个写几个
+    \end{itemize}
+    \raggedright\textbf{个人收获：}
+     \begin{description}[style=unboxed, leftmargin=0pt, noitemsep, nolistsep]
+    \item\kaishu 填写个人收获
+    \end{description}
+%-------------------------------------------------------------------------------
+%毕业设计模块如果与求职内容不匹配可以不写，这里注释了
+%-------------------------------------------------------------------------------
+% \section{\hspace{0.25em}\makebox[0.75em][c]{\faPaste} \fangsong\textbf{毕业设计}}
+% \datedsubsection{\textbf{基于\LaTeX 专业排版的毕业设计题目}}{\textbf{2023.9 \textasciitilde \ 2024.5}}
+%     \begin{itemize}
+%         \item[\faThumbTack]  \kaishu 复制相应文字到此处
+%         \item[\faThumbTack]  \kaishu 复制相应文字到此处
+%         \item[\faThumbTack]  \kaishu 复制相应文字到此处
+%     \end{itemize}
+%-------------------------------------------------------------------------------
+%专业技能
+%-------------------------------------------------------------------------------
+\section{\hspace{0.25em}\makebox[0.75em][c]{\faPuzzlePiece} \fangsong\textbf{专业技能}}
+\noindent
+    \begin{itemize}
+        \item\kaishu 写自己的专业技能
+    \end{itemize}
+%-------------------------------------------------------------------------------
+%校园经历
+%-------------------------------------------------------------------------------
+\section{\hspace{0.25em}\makebox[0.75em][c]{\faPaperPlane} \fangsong\textbf{校园经历}}
+\datedsubsection{\textbf{XXXXXXX}}
+{\textbf{起始时间 \textasciitilde\ 结束时间}}
+%-------------------------------------------------------------------------------
+%志愿经历求职建议不填写，尤其开发类
+%-------------------------------------------------------------------------------
+% \section{\hspace{0.25em}\makebox[0.75em][c]{\faHeartbeat} \fangsong\textbf{志愿经历}}
+% \datedsubsection{\textbf{\LaTeX 专业排版工程学院青年志愿部}\qquad \textit{部长}}
+% {\textbf{202×.×× \textasciitilde \ 202×.××}}
+%     \begin{itemize}
+%         \item[\faThumbTack]  \kaishu 负责组织志愿活动
+%     \end{itemize}
+%-------------------------------------------------------------------------------
+%荣誉奖项，可以放到校园经历一起写了除非有重大奖项可以写上
+%-------------------------------------------------------------------------------
+% \section{\hspace{0.25em}\makebox[0.75em][c]{\faTrophy} \fangsong\textbf{荣誉奖项}}
+%     \vspace{0.1em}
+%     \begin{itemize}
+%         \item \datedline{\kaishu 银河系大学生奖学金}{\textbf{202×.××}}
+%         \item \datedline{\kaishu 银河系猎户座大学生数学竞赛\qquad \qquad \textbf{一等奖}}{\textbf{202×.××}}
+%         \item \datedline{\kaishu 银河系猎户座大学生数学建模竞赛\qquad \textbf{一等奖}}{\textbf{202×.××}}
+%     \end{itemize}
+%-------------------------------------------------------------------------------
+%个人总结
+%-------------------------------------------------------------------------------
+\section{\hspace{0.25em}\makebox[0.75em][c]{\faSignal} \fangsong\textbf{个人总结}}
+\vspace{0.1em}
+    \begin{itemize}
+        \item \kaishu 填写个人总结
+    \end{itemize}
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\end{document}
